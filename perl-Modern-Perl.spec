@@ -44,3 +44,17 @@ rm -rf %buildroot
 %perl_vendorlib/*
 
 
+
+
+%changelog
+* Mon Apr 18 2011 Funda Wang <fwang@mandriva.org> 1.30.0-2mdv2011.0
++ Revision: 655048
+- rebuild for updated spec-helper
+
+* Wed Mar 31 2010 Jérôme Quelin <jquelin@mandriva.org> 1.30.0-1mdv2011.0
++ Revision: 530458
+- import perl-Modern-Perl
+
+
+* Wed Mar 31 2010 cpan2dist 1.03-1mdv
+- initial mdv release, generated with cpan2dist
