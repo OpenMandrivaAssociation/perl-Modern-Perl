@@ -1,15 +1,13 @@
 %define upstream_name    Modern-Perl
-%define upstream_version 1.20250607
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    1
+Version:    1.20250607
+Release:    2
 
 Summary:    Enable all of the features of Modern Perl with one command
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://github.com/chromatic/Modern-Perl
-Source0:    https://cpan.metacpan.org/authors/id/C/CH/CHROMATIC/Modern-Perl-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/C/CH/CHROMATIC/Modern-Perl-%{version}.tar.gz
 
 BuildRequires: perl(Test::Simple)
 BuildRequires: perl(Module::Build)
@@ -20,7 +18,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 no description found
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Build.PL installdirs=vendor
