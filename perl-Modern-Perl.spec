@@ -1,13 +1,14 @@
 %define upstream_name    Modern-Perl
+%define upstream_version 1.20250607
 Name:       perl-%{upstream_name}
-Version:    1.20250607
-Release:    2
+Version:	1.20250607
+Release:	1
 
 Summary:    Enable all of the features of Modern Perl with one command
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://github.com/chromatic/Modern-Perl
-Source0:    https://cpan.metacpan.org/authors/id/C/CH/CHROMATIC/Modern-Perl-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/C/CH/CHROMATIC/Modern-Perl-1.20250607.tar.gz
 
 BuildRequires: perl(Test::Simple)
 BuildRequires: perl(Module::Build)
@@ -44,15 +45,3 @@ rm -rf %buildroot
 
 
 
-%changelog
-* Mon Apr 18 2011 Funda Wang <fwang@mandriva.org> 1.30.0-2mdv2011.0
-+ Revision: 655048
-- rebuild for updated spec-helper
-
-* Wed Mar 31 2010 Jérôme Quelin <jquelin@mandriva.org> 1.30.0-1mdv2011.0
-+ Revision: 530458
-- import perl-Modern-Perl
-
-
-* Wed Mar 31 2010 cpan2dist 1.03-1mdv
-- initial mdv release, generated with cpan2dist
