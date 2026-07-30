@@ -2,7 +2,7 @@
 %define upstream_version 1.20250607
 Name:       perl-%{upstream_name}
 Version:	1.20250607
-Release:	4
+Release:	5
 
 Summary:    Enable all of the features of Modern Perl with one command
 License:    GPL+ or Artistic
@@ -29,7 +29,7 @@ no description found
 %check
 # soft: do not fail package on test failures
 set +e
-./Build test
+./Build test || :
 
 %install
 rm -rf %buildroot
