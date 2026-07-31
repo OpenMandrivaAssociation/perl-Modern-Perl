@@ -2,7 +2,7 @@
 %define upstream_version 1.20250607
 Name:       perl-%{upstream_name}
 Version:	1.20250607
-Release:	27
+Release:	28
 
 Summary:    Enable all of the features of Modern Perl with one command
 License:    GPL+ or Artistic
