@@ -2,13 +2,14 @@
 %define upstream_version 1.20250607
 Name:       perl-%{upstream_name}
 Version:	1.20250607
-Release:	47
+Release:	48
 
 Summary:    Enable all of the features of Modern Perl with one command
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://github.com/chromatic/Modern-Perl
 Source0:	https://cpan.metacpan.org/authors/id/C/CH/CHROMATIC/Modern-Perl-1.20250607.tar.gz
+BuildRequires:	make
 
 BuildRequires: perl(Test::Simple)
 BuildRequires:	perl-devel
